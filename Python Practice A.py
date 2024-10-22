@@ -6,6 +6,7 @@ The user should be able to guess four times, before revealing the answer.
 The system should tell you if the guess is higher or lower than the actual number.,
 Reminder: Insert comments, both a multi-line before the code and in-line comments.
 '''
+
 import random
 ran_num = random.randint(0, 100)
 
@@ -21,7 +22,6 @@ while count <= 4:
         print("too high")
     count += 1
 
-
 '''
 Create a set of code that completes the following requirements:        B
 
@@ -31,6 +31,9 @@ Users can guess letters that may exist in the word.
 If a user inputs the entire word, it should say they win.
 Reminder: Insert comments, both a multi-line before the code and in-line comments.
 '''
+
+list_five_words = ["hi", "sub", "hello", "morning", "bonjour"]
+
 
 '''
 Create a set of code that completes the following requirements:        C
