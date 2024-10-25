@@ -1,3 +1,4 @@
+
 '''
 Create a set of code that completes the following requirements:        A
 
@@ -7,11 +8,17 @@ The system should tell you if the guess is higher or lower than the actual numbe
 Reminder: Insert comments, both a multi-line before the code and in-line comments.
 '''
 
-import random
-ran_num = random.randint(0, 100)
+'''
+Number guessing game
+Generate number
+'''
+# import ranint
+from random import randint
+#
+ran_num = randint(0, 100)
 
 count = 0
-while count <= 4:
+while count < 4:
     ans = int(input("what is the number?"))
     if ans == ran_num:
         print("you got it right")
@@ -21,6 +28,8 @@ while count <= 4:
     elif ans > ran_num:
         print("too high")
     count += 1
+    print("you have {0} chances left".format(4 - count))
+print("you used up all of your chances")
 
 '''
 Create a set of code that completes the following requirements:        B
@@ -32,7 +41,22 @@ If a user inputs the entire word, it should say they win.
 Reminder: Insert comments, both a multi-line before the code and in-line comments.
 '''
 
+from random import randint
+
 list_five_words = ["hi", "sub", "hello", "morning", "bonjour"]
+num = randint(0, 4)
+
+while True:
+    lettter_word = input("Guess the word. No caps:")
+    if lettter_word == list_five_words[num]:
+        print("You win")
+        break
+    elif lettter_word in list_five_words[num]:
+        print("Not quite, but {0} is in the word".format(lettter_word))
+    else:
+        print("wrong")
+
+
 
 
 '''
