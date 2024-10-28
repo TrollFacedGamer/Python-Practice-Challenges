@@ -27,3 +27,5 @@ text_file = open("text_file", "w")
 
 text_file.write(story(input("Name: "), input("Month: "), input("Destination: "), input("City: "), input("Number of Days: ")))
 
+text_file.close()
+
