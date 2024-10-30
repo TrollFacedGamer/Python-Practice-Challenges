@@ -22,3 +22,8 @@ print(len(sys.argv))
 '''
 output: 2
 '''
+
+# Append-adds at last
+file1 = open("myfile.txt", "a")  # append mode
+file1.write("Today \n")
+file1.close()
